@@ -1,7 +1,7 @@
 public class MazeFactory {
     private static MazeFactory instance;
 
-    private MazeFactory() {}
+    MazeFactory() {}
 
     public static MazeFactory getInstance() {
         if (instance == null) {
