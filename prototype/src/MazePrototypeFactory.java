@@ -3,12 +3,31 @@ public class MazePrototypeFactory extends MazeFactory {
     private Wall _prototypeWall;
     private Room _prototypeRoom;
     private Door _prototypeDoor;
+    private MazeGame game;
+
+    public MazePrototypeFactory simpleFactory() {
+        return new MazePrototypeFactory(new Maze(), new Wall(), new Room(0), new Door(new Room(1), new Room(2)));
+    }
+
+    public MazePrototypeFactory bombedMazeFactory() {
+        return new MazePrototypeFactory(new Maze(), new BombedWall(), new RoomWithABomb(0), new Door(new Room(1), new Room(2)));
+    }
+
+    public Maze maze = game.CreateMaze(simpleFactory());
 
     public MazePrototypeFactory(Maze m, Wall w, Room r, Door d) {
         this._prototypeMaze = m;
         this._prototypeWall = w;
         this._prototypeRoom = r;
         this._prototypeDoor = d;
+    }
+
+    public Maze MakeMaze() {
+        return _prototypeMaze.clone();
+    }
+
+    public Room MakeRoom() {
+        return _prototypeRoom.clone();
     }
 
     public Wall makeWall() {
@@ -19,7 +38,7 @@ public class MazePrototypeFactory extends MazeFactory {
         return _prototypeDoor.clone();
     }
 
-    public Maze getMaze() {                                                          //método get
-        return _prototypeMaze.clone();                                               //está correto?
+    public Maze getMaze() {
+        return _prototypeMaze.clone();
     }
 }

@@ -1,17 +1,15 @@
 import java.util.ArrayList;
 
-public class Maze implements Cloneable {
+public class Maze {
     private ArrayList<Room> rooms;
     
     public Maze() {}
+    public Maze(ArrayList<Room> rooms) {
+        this.rooms = rooms;
+    }
 
-    @Override
     public Maze clone() {
-        try {
-            return (Maze) super.clone();
-        } catch (CloneNotSupportedException e) {
-            throw new RuntimeException(e);
-        }
+        return new Maze(this.rooms);
     }
     
     public void addRoom(Room room) {this.rooms.add(room);}

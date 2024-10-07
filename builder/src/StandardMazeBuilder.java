@@ -1,18 +1,22 @@
-public abstract class StandardMazeBuilder extends MazeBuilder {
-    private Maze _currentMaze;
+public class StandardMazeBuilder extends MazeBuilder {
+    private static Maze _currentMaze;
 
-    public StandardMazeBuilder () {
-        this._currentMaze = null;
+    private Direction CommonWall(Room a, Room b) {
+        return null;
     }
 
-    public void BuildMaze() {this._currentMaze = new Maze();}
+    public StandardMazeBuilder() {
+        _currentMaze = null;
+    }
 
-    public Maze getCurrentMaze() {return this._currentMaze;}
+    public static void buildMaze() {
+        _currentMaze = new Maze();
+    }
 
-    public void BuildRoom(int roomNo) {
-        if (!this._currentMaze.haveRoom(roomNo)) {
-            Room room = new Room(roomNo);
-            this._currentMaze.addRoom(room);
+    public static void buildRoom(int n) {
+        if (!_currentMaze.haveRoom(n)) {
+            Room room = new Room(n);
+            _currentMaze.addRoom(room);
 
             room.setSide(Direction.North, new Wall());
             room.setSide(Direction.South, new Wall());
@@ -21,11 +25,13 @@ public abstract class StandardMazeBuilder extends MazeBuilder {
         }
     }
 
-    public void BuildDoor(int n1, int n2) {
+    public static void buildDoor(int n1, int n2) {
         Room r1 = _currentMaze.getRoom(n1);
         Room r2 = _currentMaze.getRoom(n2);
         Door d = new Door(r1, r2);
     }
 
-
+    public static Maze getMaze() {
+        return _currentMaze;
+    }
 }

@@ -1,11 +1,7 @@
-public class Wall extends MapSite implements Cloneable{
-    @Override
+public class Wall extends MapSite {
+
     public Wall clone() {
-        try {
-            return (Wall) super.clone();
-        } catch (CloneNotSupportedException e) {
-            throw new RuntimeException(e);
-        }
+        return new Wall();
     }
     public Wall() {}
 }

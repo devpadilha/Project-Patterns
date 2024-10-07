@@ -1,10 +1,10 @@
 public class MazeGame {
-    public Maze CreateMaze() {
+    public Maze CreateMaze(MazePrototypeFactory prototypeFactory) {
         MazeGame game = new MazeGame();
-        Room r1 = new Room(1);
-        MazePrototypeFactory simpleMazeFactory = new MazePrototypeFactory(new Maze(), new Wall(), new Room(2),
-                             new Door(r1, new Room(3)));
 
-        return simpleMazeFactory.getMaze();
+        MazePrototypeFactory simpleMazeFactory = new MazePrototypeFactory(new Maze(), new Wall(), new Room(0),
+                new Door(new Room(1), new Room(2)));
+
+        return game.CreateMaze(simpleMazeFactory);
     }
 }
