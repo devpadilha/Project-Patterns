@@ -1,4 +1,4 @@
 public class MapSite {
-    public void Enter() {
+    public void enter() {
     }
 }

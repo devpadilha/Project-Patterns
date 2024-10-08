@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Project-Patterns.iml" filepath="$PROJECT_DIR$/Project-Patterns.iml" />
       <module fileurl="file://$PROJECT_DIR$/creationals/abstractFactory/abstractFactory.iml" filepath="$PROJECT_DIR$/creationals/abstractFactory/abstractFactory.iml" />
       <module fileurl="file://$PROJECT_DIR$/creationals/builder/builder.iml" filepath="$PROJECT_DIR$/creationals/builder/builder.iml" />
       <module fileurl="file://$PROJECT_DIR$/creationals/factoryMethod/factoryMethod.iml" filepath="$PROJECT_DIR$/creationals/factoryMethod/factoryMethod.iml" />
       <module fileurl="file://$PROJECT_DIR$/creationals/prototype/prototype.iml" filepath="$PROJECT_DIR$/creationals/prototype/prototype.iml" />
       <module fileurl="file://$PROJECT_DIR$/creationals/singleton/singleton.iml" filepath="$PROJECT_DIR$/creationals/singleton/singleton.iml" />
-      <module fileurl="file://$PROJECT_DIR$/untitled.iml" filepath="$PROJECT_DIR$/untitled.iml" />
     </modules>
   </component>
 </project>

@@ -1,11 +1,11 @@
 public class BombedMazeGame extends MazeGame {
     public BombedMazeGame() {}
 
-    public Wall MakeWall() {
+    public Wall makeWall() {
         return new BombedWall();
     }
 
-    public Room MakeRoom(int n) {
+    public Room makeRoom(int n) {
         return new RoomWithABomb(n);
     }
 }

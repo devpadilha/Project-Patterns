@@ -1,4 +1,4 @@
-public class StandardMazeBuilder extends MazeBuilder {
+public class StandardMazeBuilder implements MazeBuilder {
     private static Maze _currentMaze;
 
     private Direction CommonWall(Room a, Room b) {

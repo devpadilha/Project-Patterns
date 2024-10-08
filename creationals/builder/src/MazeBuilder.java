@@ -1,5 +1,4 @@
-public abstract class MazeBuilder {
-    protected MazeBuilder() {}
+public interface MazeBuilder {
 
     public static void buildMaze() {}
 

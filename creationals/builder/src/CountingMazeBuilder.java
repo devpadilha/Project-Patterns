@@ -1,4 +1,5 @@
-public class CountingMazeBuilder extends MazeBuilder {
+public class CountingMazeBuilder implements MazeBuilder {
+    private static Maze _currentMaze;
     private static int _doors;
     private static int _rooms;
 
@@ -21,5 +22,10 @@ public class CountingMazeBuilder extends MazeBuilder {
     public static void getCounts() {
         int rooms = _rooms;
         int doors = _doors;
+        System.out.println(rooms + " rooms and " + doors + " doors");
+    }
+
+    public static Maze getMaze() {
+        return _currentMaze;
     }
 }

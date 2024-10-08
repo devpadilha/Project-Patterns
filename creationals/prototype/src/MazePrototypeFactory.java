@@ -1,9 +1,16 @@
-public class MazePrototypeFactory extends MazeFactory {
+public class MazePrototypeFactory implements MazeFactory {
     private Maze _prototypeMaze;
     private Wall _prototypeWall;
     private Room _prototypeRoom;
     private Door _prototypeDoor;
     private MazeGame game;
+
+    public MazePrototypeFactory(Maze m, Wall w, Room r, Door d) {
+        this._prototypeMaze = m;
+        this._prototypeWall = w;
+        this._prototypeRoom = r;
+        this._prototypeDoor = d;
+    }
 
     public MazePrototypeFactory simpleFactory() {
         return new MazePrototypeFactory(new Maze(), new Wall(), new Room(0), new Door(new Room(1), new Room(2)));
@@ -14,13 +21,6 @@ public class MazePrototypeFactory extends MazeFactory {
     }
 
     public Maze maze = game.CreateMaze(simpleFactory());
-
-    public MazePrototypeFactory(Maze m, Wall w, Room r, Door d) {
-        this._prototypeMaze = m;
-        this._prototypeWall = w;
-        this._prototypeRoom = r;
-        this._prototypeDoor = d;
-    }
 
     public Maze MakeMaze() {
         return _prototypeMaze.clone();
