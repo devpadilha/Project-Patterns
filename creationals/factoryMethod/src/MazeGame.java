@@ -1,11 +1,4 @@
-public class MazeGame {
-
-    // factory methods:
-    Maze makeMaze() {return new Maze();}
-    Room makeRoom(int n) {return new Room(n);}
-    Wall makeWall() {return new Wall();}
-    Door makeDoor(Room r1, Room r2) {return new Door(r1,r2);}
-
+public class MazeGame implements MazeFactory{
     public Maze CreateMaze() {
         Maze aMaze = makeMaze();
         Room r1 = makeRoom(1);
