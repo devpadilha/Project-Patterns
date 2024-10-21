@@ -4,10 +4,16 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Project-Patterns.iml" filepath="$PROJECT_DIR$/Project-Patterns.iml" />
       <module fileurl="file://$PROJECT_DIR$/creationals/abstractFactory/abstractFactory.iml" filepath="$PROJECT_DIR$/creationals/abstractFactory/abstractFactory.iml" />
-      <module fileurl="file://$PROJECT_DIR$/structural/adapter/adapter.iml" filepath="$PROJECT_DIR$/structural/adapter/adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/structurals/adapter/adapter.iml" filepath="$PROJECT_DIR$/structurals/adapter/adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/structurals/bridge/bridge.iml" filepath="$PROJECT_DIR$/structurals/bridge/bridge.iml" />
       <module fileurl="file://$PROJECT_DIR$/creationals/builder/builder.iml" filepath="$PROJECT_DIR$/creationals/builder/builder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/structurals/composite/composite.iml" filepath="$PROJECT_DIR$/structurals/composite/composite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/structurals/decorator/decorator.iml" filepath="$PROJECT_DIR$/structurals/decorator/decorator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/structurals/facade/facade.iml" filepath="$PROJECT_DIR$/structurals/facade/facade.iml" />
       <module fileurl="file://$PROJECT_DIR$/creationals/factoryMethod/factoryMethod.iml" filepath="$PROJECT_DIR$/creationals/factoryMethod/factoryMethod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/structurals/flyweight/flyweight.iml" filepath="$PROJECT_DIR$/structurals/flyweight/flyweight.iml" />
       <module fileurl="file://$PROJECT_DIR$/creationals/prototype/prototype.iml" filepath="$PROJECT_DIR$/creationals/prototype/prototype.iml" />
+      <module fileurl="file://$PROJECT_DIR$/structurals/proxy/proxy.iml" filepath="$PROJECT_DIR$/structurals/proxy/proxy.iml" />
       <module fileurl="file://$PROJECT_DIR$/creationals/singleton/singleton.iml" filepath="$PROJECT_DIR$/creationals/singleton/singleton.iml" />
     </modules>
   </component>
