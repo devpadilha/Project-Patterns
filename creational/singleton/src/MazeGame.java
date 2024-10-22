@@ -1,25 +1,22 @@
 public class MazeGame {
-    private MazeFactory maze = null;
+    private MazeFactory factory = null;
 
     public Maze CreateMaze() {
-        Maze aMaze = new Maze();
-        Room r1 = new Room(1);
-        Room r2 = new Room(2);
-        Door theDoor = new Door(r1, r2);
-        
-        aMaze.addRoom(r1);
-        aMaze.addRoom(r2);
+        factory = MazeFactory.getInstance();
 
-        maze = MazeFactory.getInstance();
+        Maze aMaze = factory.makeMaze();
+        Room r1 = factory.makeRoom(1);
+        Room r2 = factory.makeRoom(2);
+        Door theDoor = factory.makeDoor(factory.getRoom(1), factory.getRoom(2));
         
-        r1.setSide(Direction.North, new Wall());
+        r1.setSide(Direction.North, factory.makeWall());
         r1.setSide(Direction.East, theDoor);
-        r1.setSide(Direction.South, new Wall());
-        r1.setSide(Direction.West, new Wall());
+        r1.setSide(Direction.South, factory.makeWall());
+        r1.setSide(Direction.West, factory.makeWall());
         
-        r2.setSide(Direction.North, new Wall());
-        r2.setSide(Direction.East, new Wall());
-        r2.setSide(Direction.South, new Wall());
+        r2.setSide(Direction.North, factory.makeWall());
+        r2.setSide(Direction.East, factory.makeWall());
+        r2.setSide(Direction.South, factory.makeWall());
         r2.setSide(Direction.West, theDoor);
 
         return aMaze;

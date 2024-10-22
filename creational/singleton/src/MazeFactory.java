@@ -1,6 +1,6 @@
 import static java.lang.System.getenv;
 
-public class MazeFactory {
+public class MazeFactory extends Maze {
     private static MazeFactory instance;
 
     protected MazeFactory() {}
@@ -25,5 +25,32 @@ public class MazeFactory {
             }
         }
         return instance;
+    }
+
+    public Maze makeMaze() {
+        return new Maze();
+    }
+
+    public Room makeRoom(int roomNo) {
+        Room newRoom = new Room(roomNo);
+        addRoom(newRoom);
+        return newRoom;
+    }
+
+    public Room getRoom(int roomNo) {
+        for(Room r : instance().rooms) {
+            if(r._roomNumber == roomNo) {
+                return r;
+            }
+        }
+        return null;
+    }
+
+    public Door makeDoor(Room r1, Room r2) {
+        return new Door(r1, r2);
+    }
+
+    public Wall makeWall() {
+        return new Wall();
     }
 }

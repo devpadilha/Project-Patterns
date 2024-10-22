@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Maze {
-    private ArrayList<Room> rooms;
+    ArrayList<Room> rooms;
     
     public Maze() {}
     

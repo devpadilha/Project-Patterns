@@ -7,11 +7,14 @@
       <module fileurl="file://$PROJECT_DIR$/structural/adapter/adapter.iml" filepath="$PROJECT_DIR$/structural/adapter/adapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/structural/bridge/bridge.iml" filepath="$PROJECT_DIR$/structural/bridge/bridge.iml" />
       <module fileurl="file://$PROJECT_DIR$/creational/builder/builder.iml" filepath="$PROJECT_DIR$/creational/builder/builder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/behavioral/chainofresponsability/chainofresponsability.iml" filepath="$PROJECT_DIR$/behavioral/chainofresponsability/chainofresponsability.iml" />
+      <module fileurl="file://$PROJECT_DIR$/behavioral/command/command.iml" filepath="$PROJECT_DIR$/behavioral/command/command.iml" />
       <module fileurl="file://$PROJECT_DIR$/structural/composite/composite.iml" filepath="$PROJECT_DIR$/structural/composite/composite.iml" />
       <module fileurl="file://$PROJECT_DIR$/structural/decorator/decorator.iml" filepath="$PROJECT_DIR$/structural/decorator/decorator.iml" />
       <module fileurl="file://$PROJECT_DIR$/structural/facade/facade.iml" filepath="$PROJECT_DIR$/structural/facade/facade.iml" />
       <module fileurl="file://$PROJECT_DIR$/creational/factoryMethod/factoryMethod.iml" filepath="$PROJECT_DIR$/creational/factoryMethod/factoryMethod.iml" />
       <module fileurl="file://$PROJECT_DIR$/structural/flyweight/flyweight.iml" filepath="$PROJECT_DIR$/structural/flyweight/flyweight.iml" />
+      <module fileurl="file://$PROJECT_DIR$/behavioral/iterator/iterator.iml" filepath="$PROJECT_DIR$/behavioral/iterator/iterator.iml" />
       <module fileurl="file://$PROJECT_DIR$/creational/prototype/prototype.iml" filepath="$PROJECT_DIR$/creational/prototype/prototype.iml" />
       <module fileurl="file://$PROJECT_DIR$/structural/proxy/proxy.iml" filepath="$PROJECT_DIR$/structural/proxy/proxy.iml" />
       <module fileurl="file://$PROJECT_DIR$/creational/singleton/singleton.iml" filepath="$PROJECT_DIR$/creational/singleton/singleton.iml" />

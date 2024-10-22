@@ -1,7 +1,7 @@
 public class EnchantedMazeFactory extends MazeFactory {
-    protected Spell castSpell() {return new Spell();}
-
     public EnchantedMazeFactory() {}
+
+    protected Spell castSpell() {return new Spell();}
 
     public Room makeRoom(int n) {
         return new EnchantedRoom(n, castSpell());
