@@ -1,22 +1,22 @@
 import java.util.ArrayList;
 
 public class LunchIterator implements Iterator {
-    private ArrayList<ItemMenu> items;
-    private int position = 0;
+    private ArrayList<ItemMenu> itens;
+    private int posicao = 0;
 
-    public LunchIterator(ArrayList<ItemMenu> items) {
-        this.items = items;
+    public LunchIterator(ArrayList<ItemMenu> itens) {
+        this.itens = itens;
     }
 
     @Override
     public boolean hasNext() {
-        return position < items.size();
+        return posicao < itens.size();
     }
 
     @Override
     public Object next() {
-        ItemMenu item = items.get(position);
-        position++;
+        ItemMenu item = itens.get(posicao);
+        posicao++;
         return item;
     }
 }
